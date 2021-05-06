@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<center>
+<p>Are you sure you want to delete "{{item}}"</p>
+
+<a class="btn btn-sm btn-danger" href="{% url 'list' %}">Cancel</a>
+
+<form method="POST" action=" ">{% csrf_token %}
+    
+<input  class="btn btn-sm btn-info"   type="submit" name="Confirm">
+</form>
+</div>
+</center>
